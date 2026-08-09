@@ -38,10 +38,6 @@ business knows who to support and who to invest in for growth.
 4. Test whether expanding installment/EMI availability increases order value causally — this
    analysis shows correlation only.
 
-**Limitation:** all correlations in this analysis are weak-to-moderate (ρ < 0.25). Delay and
-satisfaction are multi-causal; no single driver tested here fully explains outcomes on its own.
-Recommend pairing these findings with a controlled experiment before acting on them at scale.
-
 ## Methodology
 
 - **SQL (SQLite)** for all aggregation and feature-building queries — chosen for auditability
@@ -57,28 +53,10 @@ Recommend pairing these findings with a controlled experiment before acting on t
 
 ```
 .
-├── Olist_analysis___seller_clustering.ipynb   # main analysis notebook
-├── requirements.txt                            # Python dependencies
 ├── README.md
-├── LICENSE
-└── data/                                        # not committed — see below
+├── Olist_analysis___seller_clustering.ipynb                            
+└── data/                                        
 ```
-
-## How to Run
-
-1. Download the [Olist Brazilian E-Commerce dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
-   from Kaggle.
-2. Place the 8 CSV files into a `data/` folder in the repo root.
-3. Install dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
-4. Open `Olist_analysis___seller_clustering.ipynb` and run all cells (Kernel → Restart & Run All).
-
-Raw data isn't committed to this repo (large files, and Kaggle's terms don't permit
-redistribution) — step 1–2 above regenerates it locally.
-
-## Tech Stack
 
 Python · pandas · SQLite · scikit-learn (KMeans, PCA, StandardScaler) · SciPy (Spearman
 correlation) · seaborn/matplotlib
