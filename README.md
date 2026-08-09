@@ -53,9 +53,8 @@ business knows who to support and who to invest in for growth.
 
 ```
 .
+├── Olist_analysis___seller_clustering.ipynb
 ├── README.md
-├── Olist_analysis___seller_clustering.ipynb                            
-└── data/                                        
 ```
 
 Python · pandas · SQLite · scikit-learn (KMeans, PCA, StandardScaler) · SciPy (Spearman
